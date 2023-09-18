@@ -1,10 +1,11 @@
 /********** Template CSS **********/
 :root {
-    --primary: #19533a;
+    --primary: #0f5f07;
     --secondary: #d7d7d9;
-    --third: #261c3e;
+    --third: #2e0652;
     --light: #f8f8f9;
-    --dark: #001D23;
+    --dark: #044121;
+    --green-light: #3bae7c;
 }
 
 .back-to-top {
@@ -39,11 +40,11 @@
 
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
-    color: #FFFFFF;
+    color: var(--secondary);
 }
 
 .btn.btn-primary:hover {
-    color: var(--primary);
+    color: var(--green-light);
     background: transparent;
 }
 
@@ -104,14 +105,14 @@
 /*** Cor do hover dos menus ativos***/
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--green-light);
 }
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(0, 0, 0, .07);
-        background: var(--dark);
+        background: var(--green-light);
     }
 
     .navbar .navbar-nav .nav-link {
@@ -163,8 +164,8 @@
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
-    background-color: var(--dark);
-    border: 12px solid var(--dark);
+    background-color: var(--green-light);
+    border: 12px solid var(--green-light);
     border-radius: 3rem;
 }
 
@@ -173,7 +174,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -227,7 +228,7 @@
     justify-content: center;
     font-size: 12px;
     background: var(--primary);
-    color: #FFFFFF;
+    color: var(--secondary);
 }
 
 .causes-item .causes-overlay {
@@ -303,12 +304,12 @@
 .team-item .team-social .btn {
     display: inline-flex;
     color: var(--primary);
-    background: #FFFFFF;
+    background:var(--secondary);
     border-radius: 40px;
 }
 
 .team-item .team-social .btn:hover {
-    color: #FFFFFF;
+    color: var(--secondary);
     background: var(--primary);
 }
 
@@ -372,7 +373,7 @@
 
 .customers-carousel .owl-item.center .customers-item img {
     background: var(--primary) !important;
-} 
+}
 
 .customers-carousel .owl-nav {
     position: absolute;
